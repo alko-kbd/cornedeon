@@ -9,6 +9,10 @@ Hardware Supported: Corne 3 PCB, Handwired
 
 Build:
 
+Prepare vial-qmk [environment](https://get.vial.today/docs/porting-to-vial.html).
+
+Copy its into /keyboards/alko/cornedeon.
+
 qmk compile -kb alko/cornedeon/rev2 -km vial
 
 Note: by default, almost all optional options are disabled in the keymaps/vial/rules.mk for compatibility with rev1_5 (atmega32u4). Configure it before building rev2 (rp2040).
