@@ -18,42 +18,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define VIAL_KEYBOARD_UID {0x3B, 0x6B, 0xA0, 0x29, 0x80, 0x56, 0xED, 0xD1}
+#define VIAL_KEYBOARD_UID {0xA8, 0xE7, 0xCA, 0x40, 0x6B, 0x53, 0x0B, 0x1F}
 #define VIAL_UNLOCK_COMBO_ROWS {0, 0}
 #define VIAL_UNLOCK_COMBO_COLS {0, 1}
 
-#undef DYNAMIC_KEYMAP_LAYER_COUNT
-#define DYNAMIC_KEYMAP_LAYER_COUNT 4
-#define TAPPING_TERM 200
-
-//#define USE_MATRIX_I2C
-#ifdef KEYBOARD_crkbd_rev1_legacy
-#    undef USE_I2C
-#    define USE_SERIAL
-#endif
-
-#define SPLIT_USB_DETECT
-#define WAIT_FOR_USB
+// For master half only when MASTER_LEFT/MASTER_RIGHT using
+//#define WAIT_FOR_USB
 
 /* Select hand configuration */
 
 //#define MASTER_LEFT
 //#define MASTER_RIGHT
 // #define EE_HANDS
-#define SPLIT_HAND_PIN B4
-
-#define USE_SERIAL_PD2
-#ifdef RGBLIGHT_ENABLE
-#    undef RGBLIGHT_LED_COUNT
-#    define RGBLIGHT_ANIMATIONS
-#    define RGBLIGHT_LED_COUNT 60
-#    undef RGBLED_SPLIT
-#    define RGBLED_SPLIT \
-        { 30, 30 }
-#    define RGBLIGHT_LIMIT_VAL 120
-#    define RGBLIGHT_HUE_STEP  10
-#    define RGBLIGHT_SAT_STEP  17
-#    define RGBLIGHT_VAL_STEP  17
-#endif
-
-#define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
+// moved to revXX
+//#define SPLIT_HAND_PIN GP8
