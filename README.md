@@ -4,7 +4,7 @@ Improved Corne 3 keyboard with full 4x6 matrix.
 
 Keyboard Maintainer: [alko](https://github.com/alko-kbd) [alko-kbd@alk0.ru](mailto:alko-kbd@alk0.ru)
 
-Site: [Cornedeon.ru](https://cornedeon.ru)
+Site: [cornedeon.ru](https://cornedeon.ru)
 
 Hardware Supported: Corne 3 PCB, Handwired
 
